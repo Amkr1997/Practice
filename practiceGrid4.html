@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Grid</title>
+
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2rem;
+            font-weight: 600;
+         /* border: 0.6rem solid #96a2ad;
+            border-radius: 1rem; */
+            padding: 1.6rem 2.8rem;
+            width: 60rem;
+            height: fit-content;
+            margin-left: 40rem;
+            margin-right: auto; 
+            margin-top: 5vh;
+        }
+
+        img {
+            height: 25rem;
+            width: 30rem;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            column-gap: 1rem;
+            row-gap: 1rem;
+        }
+
+        .tags {
+            list-style: none;
+            padding: 2rem 1.8rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .tags li {
+            background-color: #e0f0fc;
+            border: none;
+            border-radius: 1rem;
+            text-align: center;
+            padding: 1.4rem 1.2rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+          <img class="img" src="a.jpg" alt="a single red balloon">
+          <ul class="tags">
+            <li>balloon</li>
+            <li>red</li>
+            <li>sky</li>
+            <li>blue</li>
+            <li>Hot air balloon</li>
+          </ul>
+        </div>
+        <div class="card">
+          <img src="pexels-hitesh-choudhary-340152.jpg" alt="balloons over some houses">
+          <ul class="tags">
+            <li>balloons</li>
+            <li>houses</li>
+            <li>train</li>
+            <li>harborside</li>
+          </ul>
+        </div>
+        <div class="card">
+          <img src="pexels-nemuel-sereti-6424586.jpg" alt="close-up of balloons inflating">
+          <ul class="tags">
+            <li>balloons</li>
+            <li>inflating</li>
+            <li>green</li>
+            <li>blue</li>
+          </ul>
+        </div>
+        <div class="card">
+          <img src="pexels-pixabay-270360.jpg" alt="a balloon in the sun">
+          <ul class="tags">
+            <li>balloon</li>
+            <li>sun</li>
+            <li>sky</li>
+            <li>summer</li>
+            <li>bright</li>
+          </ul>
+        </div>
+      </div>
+</body>
+</html>
+  
