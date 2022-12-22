@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2rem;
+            font-weight: 600;
+            border: 0.6rem solid #96a2ad;
+            border-radius: 1rem;
+            padding: 1.6rem 2.8rem;
+            width: 60rem;
+            height: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: auto;
+            margin-top: 35vh;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 1fr;
+            column-gap: 2rem;
+            row-gap: 2rem;
+        }
+
+        .grid div {
+            border: 0.4rem solid #343a40;
+            background-color: #1971c2;
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+            padding: 2.4rem 3rem;
+            border-radius: 1rem;
+            cursor: pointer;
+        }
+
+        .one {
+            grid-column: 1 / -1;
+        }
+
+        .three {
+            grid-column: 2 / -1;
+        }
+
+        .four {
+            grid-column: 2 / -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="one">One</div>
+        <div class="two">Two</div>
+        <div class="three">Three</div>
+        <div class="four">Four</div>
+    </div>
+</body>
+</html>
